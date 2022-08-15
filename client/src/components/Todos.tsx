@@ -56,7 +56,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         newTodoName: ''
       })
     } catch {
-      alert('Todo creation failed')
+      alert('Please try again..Field Cannot be empty minimum 2 Characters')
     }
   }
 
@@ -127,7 +127,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
             }}
             fluid
             actionPosition="left"
-            placeholder="To change the world..."
+            placeholder="To change the world... Minimum 2 Characters"
             onChange={this.handleNameChange}
           />
         </Grid.Column>
